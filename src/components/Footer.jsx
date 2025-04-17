@@ -37,15 +37,15 @@ const Footer = () => {
                     <ul className="mt-4" style={{ padding: "0" }}>
                         <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Our Material</span></li>
                         <hr />
-                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Our Material</span></li>
+                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Strnght Within</span></li>
                         <hr />
-                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Our Material</span></li>
+                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Multiplier taskes</span></li>
                         <hr />
-                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Our Material</span></li>
+                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Spritual Behaviour</span></li>
                         <hr />
-                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Our Material</span></li>
+                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Missionary Vision</span></li>
                         <hr />
-                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Our Material</span></li>
+                        <li> <FontAwesomeIcon icon={faAngleRight} /><span style={{ marginLeft: "10px" }}>Virtual Promises</span></li>
                         <hr />
                     </ul>
                 </div>
