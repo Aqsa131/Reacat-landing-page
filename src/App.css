@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+* {
+  /* font-family: 'Open Sans', sans-serif !important; */
+  padding: 0;
+  margin: 0;
+  /* overflow-x: hidden; */
+  /* height: 100%; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  color: #adacac;;
+  font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: bolder !important;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+  font-family: 'Playfair Display', serif !important;
+}
+.carousel {
+  overflow-y: hidden !important;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* In your CSS file */
+@keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-zoom {
+  animation: zoomin 5s ease-in-out infinite alternate;
+}
+
+.learnMoreBtn {
+  width: 150px;
+  height: 47px;
+  border: 2px solid white;
+  margin-top: 20px;
+}
+
+.quoteBtn {
+  width: 150px;
+  height: 47px;
+  border: 2px solid white;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.learnMoreBtn:hover {
+  background-color:  #f53f85;
+  color: white;
+  border: none;
+}
+
+.quoteBtn:hover {
+  background-color:  #f53f85;
+  color: white;
+  border: none;
+}
+
+.footer {
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+}
+
+.icon {
+  display: flex;
+  margin-bottom: 10px
+}
+
+.footerIcon {
+  display: flex;
+  align-items: baseline;
+}
+
+.footerLinks {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 30px;
+}
+.footerLinks a{
+ text-decoration: none;
+ color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* about */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
 }
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+/* codepen */
+  
+  @keyframes scroll {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translateX(calc(-250px * 7));
+	}
+  }
+
+  .slide-track {
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(250px * 14);
+  }
+  /* home */
+  .homeCards{
+    max-width: 100%;
+    height: 300px;
+    
+  }
