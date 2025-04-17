@@ -1,8 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
+import Products from '../pages/Products';
+
 
 function BasicExample({ title, disc, img, btn, price }) {
   return (
+
     <>
 
 
@@ -13,7 +17,21 @@ function BasicExample({ title, disc, img, btn, price }) {
             <Card.Title>{title}</Card.Title>
             <Card.Text>{disc}</Card.Text>
             <h6>Price: {price}</h6>
-            <Button className='text-white mt-2' style={{ width: "130px", height: "44px", backgroundColor: " #f53f85", fontWeight: "500", border: "none", borderRadius: "0" }} >{btn}</Button>
+            <Link to="/products">
+              <Button
+                className='text-white mt-2'
+                style={{
+                  width: "130px",
+                  height: "44px",
+                  backgroundColor: "#f53f85",
+                  fontWeight: "500",
+                  border: "none",
+                  borderRadius: "0"
+                }}
+              >
+                {btn}
+              </Button>
+            </Link>
           </Card.Body>
         </Card>
       </div>
