@@ -1,0 +1,23 @@
+.cardBtn{
+    background-color: #f53f85;
+    width: 142px;
+    height: 50px;
+    margin: 20px;
+    color: white;
+}
+.field{
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  max-width: 400px; /* apni width adjust kar sakti ho */
+}
+
+.searchField{
+    flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+;
+}

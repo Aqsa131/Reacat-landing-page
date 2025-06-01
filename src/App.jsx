@@ -2,15 +2,20 @@ import './App.css';
 import NavBar from "./components/NavBar"
 import Footer from './components/Footer';
 import Routing from './pages/Routing';
+import CartContextProvider from './context/CartContextProvider';
+import Products from './pages/Products';
 
 
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Routing/>
-      <Footer />
+
+      <CartContextProvider>
+        <NavBar />
+        <Routing />
+        <Footer />
+      </CartContextProvider>
     </>
   );
 }

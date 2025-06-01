@@ -1,7 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import Products from '../pages/Products';
 
 
 function BasicExample({ title, disc, img, btn, price }) {
